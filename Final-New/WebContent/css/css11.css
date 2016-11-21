@@ -1,0 +1,182 @@
+@charset "utf-8";
+#clear{ clear: both;}
+body {/*font mac dinh khi ta khi chu vao*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin:0px;
+	background-color:#CCC;
+}
+
+#menu ul {
+	padding: 20px;
+	width:230px;
+	list-style-type: none;
+	text-align: left;
+	background-color:orange;
+	
+}
+#header1{width:100%; height:50px; background-color: #483D8B; clear:left;}
+#header{width:99%; height:222px; background-color: #483D8B; clear:left;}
+
+#logo{float:left; margin-top:9px; margin-left:75px; color:#F03;}
+#login{float: right; margin:10px 0px 0px 0px; padding-right:25px; color:seashell;}
+.Tentaikhoan{float: left;padding-right: 20px;}
+.Dangxuat{    float: right;padding-right: 10px;}
+.sub_login{width:100px;}
+#content{ font-size:1em; margin:15px,15px; overflow:hidden; background-color:#FFE1FF; clear:left; height:auto;}
+#menu{ float:left;width:250px; height:1050px;margin: 0px 0px 0px 0px; }
+#menu ul>li>ul { margin:0px 20px 0px 20px;}
+#menu ul>li>ul>li>a{width:90%; height:35px; border:1px solid #FFF; background-color:#337AB7; color: #FFF; line-height:2em;}
+#menu ul>li>ul>li:hover>a{ background-color: #66BAFF;}
+#primary{ float:right; width:710px; height:auto; margin:0px 10px 10px 0px; padding:10px;}
+
+#menu li a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 200px;
+  display:block;
+  margin:0px;
+  }
+#menu11 ul {
+	list-style-type: none;
+	padding:0px;
+	margin:0px;
+}
+#menu11>ul>li {
+	display: inline;
+	
+}
+#menu11{width:100%; height:50px; background-color:#337AB7;}
+#menu11 li a{text-decoration:none; color: #FFF;}
+#menu11 ul li{
+		width:144px;
+		float:left;
+		color: #000;
+		font-weight:100%;
+		text-align:center;
+		line-height:50px;
+		border-left:1px solid #fff;
+}
+#menu11 ul>li:hover{background-color: #66BAFF;}
+/*#menu11 li .sub_menu{position:absolute; width:200px; background:#999; top:0px; left:100%; display: block;}*/
+/*#menu11 ul li .sub_menu{ color:#F00; position:absolute; top: 100px;}
+#menu11 ul li ul li .sub_menu{ color:#F00; position:absolute; top: 100px;}
+/*#menu11 li:hover>.sub_menu{display:block;}
+#menu11>ul>li>ul.sub_menu{top:171px; position:absolute; left:377px;}*/
+#wapper {
+	 /*kich thuoc cua trang web*/
+	margin: auto;
+	width: 1100px;
+	border:0px solid;
+	height: auto;
+	background-color: #FFF;
+	/*padding:20px;*/
+	padding:9px 13px;
+}
+#footer{width: 100%; height:auto; background-color:#FFA500; clear:left;}
+#phu ul{list-style-type:none; text-align:center;}
+#phu ul li{display:inline;}
+#phu ul li a{font-size:18px;}
+#phu {
+	clear: both;
+	width: 100%;
+}
+#chayngang{font-size:24px; color:#00F; height:30px; text-transform:uppercase;}
+#top{width: 50px; height:50px; position:fixed; bottom: 10px; right:10px; text-indent:-99999px;cursor: pointer; background: url("images/icon.png") no-repeat 0 0;}
+#chan {
+    padding: 30px 0 10px 0;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(211 ,211,211);
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    clear: both;
+}
+
+#footer-bottom {
+    background: #333;
+    border-top: 2px solid #666;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    clear: both;
+}
+.btn-lg.round {
+	border-radius: 24px;
+}
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: #27AE61;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}

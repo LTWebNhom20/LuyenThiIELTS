@@ -1,0 +1,81 @@
+</fieldset>
+                                                        <footer>
+                                                            <div class="row">
+                                                            <section class="col col-1">
+                                                                <a href="#page-top" class="page-scroll button button-secondary">Top</a>
+                                                            </section>
+                                                            <section class="col col-2">
+                                                            </section>
+                                                            <section class="col col-3">
+                                                            </section>
+                                                            <section class="col col-2">
+                                                            <a href="#btn-time" class="modal-opener"><button class="hide" type="button" id="hey-you" class="button" class="modal">Time</button></a>
+                                                            </section>
+                                                            <div class="col col-4">
+                                                                 <a href="#btn-submit" class="modal-opener"><button type="button" class="button" class="modal" onClick="getScore();">Submit</button></a>
+                                                            </div>
+                                                        </div>
+                                                        </footer>
+                        </form>
+                    </div>
+            </div>
+        </section>
+    </div>
+    
+    <form action="Result" id="btn-submit" class="sky-form sky-form-modal" method="submit">
+                <header align="center">Notification!!!</header>
+                
+                <fieldset>                  
+                    <p class="text-test">Do you really want to submit your answers?</p>
+                        <input type="hidden" name="reading" value="Huyen" id="reading"/>
+    <input type="hidden" name="listening" value="Mylove" id="listening"/>
+                </fieldset>
+                <footer>
+                    <button type="submit" class="button">Yes</button>
+                    <button class="button button-secondary modal-closer" onclick="swal('You have just clicked No!!!', 'Click OK to continue!!!', 'error');">No</button>
+                </footer>
+    </form>
+    <!-- Time's Up -->
+        <form action="Result" id="btn-time" class="sky-form sky-form-modal" method="post">
+                <header align="center" class="fa fa-warning fa-2x">Notification!!!</header>
+                <fieldset>             
+                <input type="hidden" name="reading" value="Huyen" id="reading2"/>
+    <input type="hidden" name="listening" value="Mylove" id="listening2"/>
+					<p class="text-test" align="center">Time's Up!</p>
+                    <p class="text-test" align="center">Click OK to see your result</p>
+                </fieldset>
+                <footer>
+                    <button type="submit" class="button">OK</button>
+                </footer>
+		</form>
+    
+    <footer>
+            <p align="center">Copyright &copy; IELTS ONLINE 2016</p>
+    </footer>
+
+<!-- Click button function -->
+<script>
+function timeup() {
+	getScore();
+    document.getElementById("hey-you").click();
+}
+</script> 
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="js/jquery.modal-sky.js"></script>
+
+        <!-- Sweet Alert -->
+    <script src="js/sweetalert-dev.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+</body>
+
+</html>
