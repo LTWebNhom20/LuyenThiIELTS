@@ -70,7 +70,7 @@
                         <a href="practice.jsp">Practice</a>
                     </li>
 					<li>
-                        <a href="upload.jsp">Upload</a>
+                        <a href="library.jsp">Library</a>
                     </li>
                     <li>
                         <a href="/Final-New/logOut" data-toggle="modal">Sign Out</a>
@@ -96,13 +96,54 @@
                             <label for="sky-tab3"><span><span><i class="fa fa-bar-chart"></i>My Result</span></span></label>
 
                           <input type="radio" name="sky-tabs" id="sky-tab5" class="sky-tab-content-5">
-                            <label for="sky-tab5"><span><span><i class="fa fa-phone"></i>Library</span></span></label>
+                            <label for="sky-tab5"><span><span><i class="fa fa-book"></i>Upload Library</span></span></label>
                             
 
                             <input type="radio" name="sky-tabs" id="sky-tab4" class="sky-tab-content-4">
                             <label for="sky-tab4"><span><span><i class="fa fa-phone"></i>Contact</span></span></label>
                             
                             <ul>
+                            <li class="sky-tab-content-5">
+                                
+                                    <form action="UploadLibrary" id="sky-form" class="sky-form" method="post" enctype="multipart/form-data" >
+                                            <header>Upload File to Library</header>                                            
+                                            <fieldset>
+                                            <center>
+   <table border="2">
+       <tr>
+               <td align="center"><b>Multipale file Uploader</td>
+           </tr>
+       <tr>
+               <td>
+                       Specify file:<input type="file" name="file" multiple/>
+                   <td>
+           </tr>
+           <tr>
+              <td>
+                  </td>
+        <tr>
+                   <td>
+                       
+                      <input type="hidden" name="upload" value="full"/>
+                   </td>
+                 </tr>
+                 <tr>
+                    <td align="center">
+               
+                        </td>
+                 </tr>
+    </table>
+        <center>              
+                                            </fieldset>
+                                            <footer>
+                                            	<input class="button" type="submit" name="Submit" value="Submit files"/>
+                                            </footer>
+                                    </form>         
+                                    
+                                   
+                                    
+                                    
+                                </li>
                                 <li class="sky-tab-content-1">
                                     <form action="" class="sky-form">
                                         <header>User Information</header>

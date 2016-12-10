@@ -99,6 +99,31 @@ INSERT INTO `faculty` VALUES ('CT','Chemical Technology'),('EC','Economics'),('E
 UNLOCK TABLES;
 
 --
+-- Table structure for table `file`
+--
+
+DROP TABLE IF EXISTS `file`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `file` (
+  `id` int(11) DEFAULT NULL,
+  `filename` varchar(45) DEFAULT NULL,
+  `time` varchar(45) DEFAULT NULL,
+  `user` varchar(45) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `file`
+--
+
+LOCK TABLES `file` WRITE;
+/*!40000 ALTER TABLE `file` DISABLE KEYS */;
+INSERT INTO `file` VALUES (342,'bootstrap.txt','12/09/2016 23:31:10','duc');
+/*!40000 ALTER TABLE `file` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `login_info`
 --
 
@@ -124,7 +149,7 @@ CREATE TABLE `login_info` (
 
 LOCK TABLES `login_info` WRITE;
 /*!40000 ALTER TABLE `login_info` DISABLE KEYS */;
-INSERT INTO `login_info` VALUES ('admin','admin',2,'nhoxfuu@gmail.com','Thai','Quang','','10-10-1995'),('duc','202cb962ac59075b964b07152d234b70',1,'duc@gmail.com','huy','duc','11/21/2016 16:27:01','13-11-2016'),('test1','321',1,'usertest1@gmail.com','Test','1','10-12/2015','06.12.2015');
+INSERT INTO `login_info` VALUES ('admin','admin',2,'nhoxfuu@gmail.com','Thai','Quang','','10-10-1995'),('duc','202cb962ac59075b964b07152d234b70',1,'duc@gmail.com','huy','duc','11/21/2016 16:27:01','13-11-2016');
 /*!40000 ALTER TABLE `login_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -180,6 +205,7 @@ CREATE TABLE `my_result` (
 
 LOCK TABLES `my_result` WRITE;
 /*!40000 ALTER TABLE `my_result` DISABLE KEYS */;
+INSERT INTO `my_result` VALUES ('Listen1','duc',3,0,3,'12/05/2016 09:43:00');
 /*!40000 ALTER TABLE `my_result` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -205,7 +231,7 @@ CREATE TABLE `practice_fulltest` (
 
 LOCK TABLES `practice_fulltest` WRITE;
 /*!40000 ALTER TABLE `practice_fulltest` DISABLE KEYS */;
-INSERT INTO `practice_fulltest` VALUES ('Test1','test1','10/12/2015',0),('Test1','user','10/12/2015',0);
+INSERT INTO `practice_fulltest` VALUES ('Test1','test1','11/11/2016',0),('Test1','user','11/11/2016',0);
 /*!40000 ALTER TABLE `practice_fulltest` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -231,7 +257,7 @@ CREATE TABLE `practice_listen` (
 
 LOCK TABLES `practice_listen` WRITE;
 /*!40000 ALTER TABLE `practice_listen` DISABLE KEYS */;
-INSERT INTO `practice_listen` VALUES ('Listen1','user','10/10/2015',0),('Test1','test1','10/10/2015',0);
+INSERT INTO `practice_listen` VALUES ('Listen1','user','11/11/2016',0);
 /*!40000 ALTER TABLE `practice_listen` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -257,7 +283,7 @@ CREATE TABLE `practice_read` (
 
 LOCK TABLES `practice_read` WRITE;
 /*!40000 ALTER TABLE `practice_read` DISABLE KEYS */;
-INSERT INTO `practice_read` VALUES ('Reading1','test1','12/11/2015 10:00:00',0),('Reading1','user','12/11/2015 10:00:00',0);
+INSERT INTO `practice_read` VALUES ('Reading1','test1','11/11/2016 10:00:00',0);
 /*!40000 ALTER TABLE `practice_read` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -298,4 +324,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-21 17:34:48
+-- Dump completed on 2016-12-10 21:53:22

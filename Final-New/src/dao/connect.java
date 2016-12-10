@@ -492,7 +492,29 @@ public class connect {
 			return result;
 		}
 	}
-
+	public ResultSet getLibrary(String UserName) {
+		// Prepare a return value
+		// Prepare a resultset to save temporary data take from SQL
+		ResultSet result = null;
+		try {
+			// Create a connection
+			Connection conn = connect();
+			// Prepare a null query
+			PreparedStatement pst = null;
+			// Set value to query
+			pst = (PreparedStatement) conn.prepareStatement("SELECT * FROM ieltsonline.file;");
+			// Fill data take form SQL to resultset
+			result = pst.executeQuery();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			// The resultset will be return any way
+			// May be the username is incorrect
+			return result;
+		}
+	}
 	// Get list of reading test by user
 	public ResultSet getReadTest(String UserName) {
 		// Prepare a return value
@@ -572,7 +594,34 @@ public class connect {
 			return value;
 		}
 	}
-
+	public boolean deleteLibrary(String User, String id) {
+		// Prepare a return value
+		boolean value = false;
+		try {
+			// Create a connection
+			Connection conn = connect();
+			// Prepare a null query
+			PreparedStatement pst = null;
+			// Set value to query
+			pst = (PreparedStatement) conn
+					.prepareStatement("DELETE FROM ieltsonline.file WHERE id=?;");
+			// Set the first element with examination code
+			pst.setString(1, id);
+			// Set the second element with username
+			pst.setString(2, User);
+			// Begin update database
+			pst.executeUpdate();
+			// Set variable value to true
+			value = true;
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			// Return variable value
+			return value;
+		}
+	}
 	// Delete a user listening test
 	public boolean deleteListenTest(String UserID, String examCode) {
 		// Prepare a return value

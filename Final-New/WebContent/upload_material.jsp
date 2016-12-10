@@ -123,6 +123,7 @@ else
                             
                             <ul>
                                 <li class="sky-tab-content-1">
+                                
                                     <form action="Upload" id="sky-form" class="sky-form" method="post" enctype="multipart/form-data" >
                                             <header>Upload Full Test</header>                                            
                                             <fieldset>
@@ -141,7 +142,7 @@ else
                   </td>
         <tr>
                    <td>
-                      Folder name:<input name="folder" type="text" placeholder="New folder...">
+                        Folder name:<input name="folder" type="text" placeholder="New folder...">
                       <input type="hidden" name="upload" value="full"/>
                    </td>
                  </tr>
@@ -157,6 +158,10 @@ else
                                             	<input class="button" type="submit" name="Submit" value="Submit files"/>
                                             </footer>
                                     </form>         
+                                    
+                                   
+                                    
+                                    
                                 </li>
                                 
                                 <li class="sky-tab-content-2">
@@ -194,7 +199,8 @@ else
                                             <footer>
                                             	<input class="button" type="submit" name="Submit" value="Submit files"/>
                                             </footer>
-                                    </form>           
+                                    </form>  
+                                             
                                     </div>       
                                 </li>
                                 
@@ -271,9 +277,11 @@ else
                                             <footer>
                                             	<input class="button" type="submit" name="Submit" value="Submit files"/>
                                             </footer>
-                                    </form>           
+                                    </form>   
+                                    
                                     </div>       
                                 </li>
+                                
                                 <li class="sky-tab-content-5">
                                     <div class="row text-center">
                                     <h1>Contact us on:</h1>

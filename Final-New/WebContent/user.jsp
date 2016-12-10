@@ -180,4 +180,7 @@ try {
 	e.printStackTrace();
 }
 %>
+
+
 <jsp:include page="user_foot.html" />
+<jsp:include page="user_upload.html" />

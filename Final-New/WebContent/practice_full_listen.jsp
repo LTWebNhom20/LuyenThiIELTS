@@ -26,7 +26,7 @@ String URI=request.getRequestURI();
 servletPath=request.getServletPath();
 readFile read=new readFile();
 String[] tmpURI=URI.split("\\/");
-String nameTest="read.xlsx";
+String nameTest="listen.xlsx";
 String direct=(String)session.getAttribute("direct");
 direct+="listen.xlsx";
 //String direct="C:\\Users\\Admin\\workspace\\Final-New\\WebContent\\uploadFile\\user\\Reading\\Test1\\"+nameTest;
@@ -85,9 +85,9 @@ for(;i<part1*5+1;i+=5){
 out.println(read.Read(direct, i++)+"<br />");
 for(;i<part1*5+1+part2*5+1;i+=5){
 
-	out.println(read.Read(direct, i)+"<br />");
+	//out.println(read.Read(direct, i)+"<br />");
 	//System.out.println(read.Read(direct, i));
-	//out.println("<img src=\"uploadFile/"+session.getAttribute("lgUser")+"/Listening/"+session.getAttribute("nameTest")+"/"+read.Read(direct, i)+"\" alt=\"File not found\" style=\"width:425px;height:282px;\">");
+	out.println("<img src=\"uploadFile/"+"/FullTest/"+session.getAttribute("nameTest")+"/"+read.Read(direct, i)+"\" alt=\"File not found\" style=\"width:425px;height:282px;\"><br />");
 	for(int j=i+1;j<i+5;j++){
 		out.println("<input name=\""+"Q"+NO+"\" type=\""+"radio\""+" value=\""+read.Read(direct, j)+"\"/>"+read.Read(direct, j)+"<br />");
 	}
@@ -100,10 +100,10 @@ for(;i<part1*5+1+part2*5+1;i+=5){
 out.println(read.Read(direct, i++)+"<br />");
 for(;i<part1*5+1+part2*5+1+part3*5+1;i+=5){
 
-	out.println(read.Read(direct, i)+"<br />");
+	//out.println(read.Read(direct, i)+"<br />");
 	//System.out.println(direct);
 	//System.out.println(read.Read(direct, i));
-	//out.println("<img src=\"uploadFile/"+session.getAttribute("lgUser")+"/Listening/"+session.getAttribute("nameTest")+"/"+read.Read(direct, i)+"\" alt=\"File not found\" style=\"width:425px;height:282px;\">");
+	out.println("<img src=\"uploadFile/"+"/FullTest/"+session.getAttribute("nameTest")+"/"+read.Read(direct, i)+"\" alt=\"File not found\" style=\"width:425px;height:282px;\"><br />");
 	for(int j=i+1;j<i+5;j++){
 		System.out.println(direct);
 		System.out.println(read.Read(direct, i));
@@ -116,8 +116,8 @@ for(;i<part1*5+1+part2*5+1+part3*5+1;i+=5){
 out.println(read.Read(direct, i++)+"<br />");
 for(;i<part1*5+1+part2*5+1+part3*5+1+part4*5+1;i+=5){
 
-	out.println(read.Read(direct, i)+"<br />");
-	//out.println("<img src=\"uploadFile/"+session.getAttribute("lgUser")+"/Listening/"+session.getAttribute("nameTest")+"/"+read.Read(direct, i)+"\" alt=\"File not found\" style=\"width:425px;height:282px;\">");
+	//out.println(read.Read(direct, i)+"<br />");
+	out.println("<img src=\"uploadFile/"+"/FullTest/"+session.getAttribute("nameTest")+"/"+read.Read(direct, i)+"\" alt=\"File not found\" style=\"width:425px;height:282px;\"><br />");
 	for(int j=i+1;j<i+5;j++){
 		out.println("<input name=\""+"Q"+NO+"\" type=\""+"radio\""+" value=\""+read.Read(direct, j)+"\"/>"+read.Read(direct, j)+"<br />");
 	}
